@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women’s western wears</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            font-family: "apple-system", "Helvetica Neue", sans-serif, "Mier Book";
+            /* height: 500px; */
+            /* border: 1px solid blue; */
+        }
+
+        #navbar {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+           border-bottom: 1px solid #8b8ba3;
+           position: fixed;
+           top: 0%;
+            background-color: white;
+
+        }
+
+        #navbar>div:nth-child(1){
+            width: 45%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #logo{
+            width: 30%;
+            /* border: 1px solid blue; */
+
+        }
+
+        #logo>a>img{
+            width: 100%;
+            height: 100%;
+            
+            padding: 12px;
+        }
+        #search{
+            width: 65%;
+            /* border: 1px solid blue; */
+
+        }
+        #search>div{
+            border: 1px solid #8b8ba3;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            color: #8b8ba3;
+
+        }
+        #search>div>input{
+            width: 90%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+
+    
+
+        #navbar>div:nth-child(2){
+            width: 45%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+            /* padding: 10px; */
+            /* margin-left: 10px; */
+            margin: 10px;
+           
+
+        }
+
+        #navbar>div:nth-child(2)>div{
+            width: 30%;
+            /* border: 1px solid blue; */
+           
+            font-size: larger;
+            padding: 6px;
+            margin-right: 10px;
+            
+
+        }
+
+        #navbar>div:nth-child(2)>div:nth-child(1){
+            border-right: 2px solid #8b8ba3;
+        }
+        #navbar>div:nth-child(2)>div:nth-child(2){
+            border-right: 2px solid #8b8ba3;
+           
+        }
+
+        #navbar>div:nth-child(2)>div:nth-child(3){
+            display: flex;
+            font-size: large;
+        }
+
+        #navbar>div:nth-child(2)>div:nth-child(3)>div{
+
+            /* border: 1px solid blue; */
+            margin-left: 25px;
+              /* padding-right: 10px; */
+        }
+
+        #navbar>div:nth-child(2)>div:nth-child(3)>div>i{
+            /* border: 1px solid blue; */
+            /* padding-right: 10px; */
+            text-align: center;
+            margin: auto;
+        }
+        #navbar>div:nth-child(2)>div:nth-child(3)>div>p{
+            /* border: 1px solid blue; */
+            font-size: medium;
+            text-align: center;
+            /* margin-right: 100px; */
+            margin-right: 10px;
+          
+        }
+
+
+        #categories {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid blue; */
+           /* text-align: center; */
+           padding-top: 20px;
+           /* padding-left: 28px; */
+           border-bottom: 1px solid #8b8ba3;
+         
+           position: fixed;
+           top: 60px;
+           background-color: white;
+
+        }
+         #categories>a{
+            text-decoration: none;
+            color: black;
+          
+        }
+        #categories>a>span{
+            padding: 10px;
+            font-size: larger;
+            font-weight: 100px;
+
+            
+          
+        }
+        #categories>a>span:hover{
+            color: #570c45;
+            font-weight: 300px;
+        }
+
+        #container{
+            width: 100%;
+            margin-top: 150px;
+        }
+
+    
+        #container>h2:nth-child(1) {
+            /* text-align: center; */
+            /* border-bottom: 1px solid red; */
+            /* padding: 80px; */
+            margin-top: 40px;
+            /* margin-bottom: 40px; */
+        }
+        #container>p:nth-child(2) {
+            /* text-align: center; */
+            /* border-bottom: 1px solid red; */
+            /* padding: 80px; */
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* //all//product */
+
+          #container>div:nth-child(3) {
+            width: 100%;
+            /* border: 5PX SOLID pink; */
+            
+            display: flex;
+            justify-content: space-around;
+            /* margin-top: 300px; */
+        }
+
+
+      
+
+        #productfilterby {
+            /* border: 1px solid teal; */
+            /* height: 400px; */
+            width: 25%;
+
+        }
+        #productfilterby>div{
+            margin-bottom: 25px;
+        }
+
+        #productfilterby>div:nth-child(1) {
+            border: 1px solid #c8c8c8;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        #productfilterby>div:nth-child(2) {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #c8c8c8;
+            border-radius: 5px;
+        }
+
+     
+
+        #productfilterby>div:nth-child(2)>p:nth-child(2) {
+            font-size: small;
+            border-bottom: 1px solid #c8c8c8;
+            padding-bottom: 20px;
+            color: #c8c8c8;
+        }
+
+
+        #productfilterby>div:nth-child(2)>p:nth-child(3) {
+
+            font-weight: 600;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: large;
+
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(4) {
+            border: 1px solid#8b8ba3;
+            padding: 6px;
+            margin-top: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(4)>input:nth-child(2) {
+            width: 90%;
+            padding: 5px;
+            border: none;
+            outline: none;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(5) {
+            border-bottom: 1px solid #8b8ba3;
+            padding-bottom: 30px;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(5)>input {
+            margin-top: 20px;
+            color: #8b8ba3;
+            /* padding-top: 10px; */
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(5)>label {
+            margin-left: 5px;
+            color: #8b8ba3;
+            font-size: larger;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(6) {
+            width: 100%;
+             border-bottom: 1px solid #8b8ba3;
+             padding-bottom: 30PX;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(6)>p {
+            font-size: larger;
+            font-weight: 600;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #productfilterby>div:nth-child(2)>div:nth-child(6)>span {
+            border: 1px solid #8b8ba3;
+            padding: 12px;
+            font-size: large;
+            border-radius: 15px;
+            margin-top: 20px;
+            /* padding-left: 20px; */
+            /* margin-right: 20px; */
+            /* padding-top: 15px; */
+        }
+
+      .SELECTION{
+        width: 100%;
+        text-decoration: none;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #8b8ba3;
+        margin-top: 20PX;
+        outline: NONE;
+        font-size: 16PX;
+        font-weight: bold;
+        justify-content: space-between;
+        color: #353543;
+        
+      }
+
+
+
+
+
+
+
+        
+
+
+        #product {
+            /* border: 1px solid teal; */
+            /* height: 400px; */
+            height: 100%;
+            width: 72%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+        }
+
+        #product>div{
+            width: 24%;
+            /* height: 400PX; */
+            line-height: 35px;
+            border: 1px solid #a3a3b7;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            /* padding-bottom: 15px; */
+            padding-bottom: 15px;
+            object-fit: contain;
+         
+
+        }
+         #product>div>div{
+           width: 100%;
+           /* height: 250px; */
+           /* margin: auto; */
+          
+         }
+
+        #product>div>div>img {
+           display: block;
+                margin-left: auto;
+            margin-right: auto;
+              width: 70%;
+              /* height: 100%; */
+            
+            
+              
+        }
+
+        #product>div>p:nth-child(2) {
+            color: #C8C8C8;
+            font-size: 13px;
+            padding-left: 20px;
+        }
+
+        #product>div>h5:nth-child(3) {
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        #product>div>h5:nth-child(3)>span {
+            font-size: small;
+            color: #a3a3b7;
+            font-weight: 500;
+            /* padding-left: 20px; */
+        }
+
+        #product>div>div:nth-child(4) {
+            margin-left: 20px;
+        }
+
+        #product>div>div:nth-child(4)>span {
+            border: 1px solid #a3a3b7;
+            font-size: small;
+            font-weight: bold;
+            padding: 6px;
+            border-radius: 10px;
+            /* padding-left: 20px; */
+            background-color: #f8f8ff;
+
+        }
+
+        #product>div>span:nth-child(5) {
+            /* border: 1px solid #a3a3b7; */
+            padding: 6px;
+            background-color:#23bb75;
+            color: white;
+            border-radius: 20px;
+            /* margin-left: 5px; */
+            margin-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        #product>div>span:nth-child(6){
+            font-size: small;
+            color: #a3a3b7;
+            margin-left: 10PX;
+
+
+
+        }
+
+        #container>div:nth-child(4){
+            /* border:2px solid green; */
+            /* height: 300px; */
+            width: 100%;
+            background-color: #f8f8ff;
+            margin-top: 50px;
+        }
+
+        #footer {
+            width: 100%;
+            /* border:1px solid green; */
+            background-color: #f8f8ff;
+            display: flex;
+            justify-content: space-around;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: rgb(97, 97, 115);
+            padding-top: 70px;
+            padding-bottom: 30px;
+
+        }
+
+        #footer>div>h2,
+        h4 {
+            color: #353543;
+        }
+
+        #footer>div:nth-child(1) {
+            width: 35%;
+            /* border:1px solid green; */
+            /* color: rgb(97, 97, 115); */
+            /* line-height: 40px; */
+
+
+        }
+
+        #footer>div:nth-child(1)>div {
+            width: 45%;
+        }
+
+        #footer>div:nth-child(1)>h2 {
+            margin-bottom: 20px;
+        }
+
+        #footer>div:nth-child(1)>p {
+            margin-bottom: 20px;
+        }
+
+
+        #footer>div:nth-child(1)>div>img {
+            margin-left: 10px;
+        }
+
+        #footer>div:nth-child(2) {
+            width: 13%;
+            /* border:1px solid green; */
+            line-height: 35px;
+        }
+
+        #footer>div:nth-child(3) {
+            width: 13%;
+            /* border:1px solid green; */
+            line-height: 35px;
+        }
+
+        #footer>div:nth-child(4) {
+            width: 12%;
+            /* border:1px solid green; */
+        }
+
+        #footer>div:nth-child(4)>div>img {
+            padding-right: 10px;
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        #footer>div:nth-child(5) {
+            width: 20%;
+            /* border:1px solid green; */
+            /* font-size: small; */
+            line-height: 19px;
+        }
+
+        #footer>div:nth-child(5)>p {
+            font-size: small;
+            margin-top: 20px;
+        }
+
+        #moreabtmeesho {
+            width: 98%;
+            margin: auto;
+            /* height: 300px; */
+            padding: 20px;
+            border: 1px solid #a3a3b7;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        #moreabtmeesho>h2 {
+            /* border-bottom: 1px solid #a3a3b7; */
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        #moreabtmeesho>h3 {
+            /* border-bottom: 1px solid #a3a3b7; */
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <div id="logo">
+                    <a href="/meesho.html">  <img src="https://uploads-ssl.webflow.com/62bc395da3c33ed00dcc1317/634bd1950007a1468123fe05_logo%20meesho%20-p-500.png" ></a>
+                  
+                   
+
+
+                </div>
+                <div id="search">
+                    <div> <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <input type="text" placeholder="Try Saree, Kurti or Search by Product Code
+                        ">
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+                
+                <div><i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Download App</span>
+                 </div>
+                <div>
+                    <span>Become a Supplier </span>
+                </div>
+
+                <div>
+                    <div><i class="fa-regular fa-user"></i>
+                        <p>Profile</p>
+                    </div>
+
+                    <div><i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cart</p></div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <div id="categories">
+            <a href="/meesowomesethic.html"> <span>Women Ethnic</span></a>
+            <a href="/meeshowomenswestern.html">  <span>Women Western</span></a>
+            <a href="/meeshomens.html">  <span>Men</span></a>
+            <a href="/meeshokids.html"> <span>Kids</span></a>
+            <a href="/meeshohomeskit.html"> <span>Home & Kitchen</span></a>
+            <a href="/meeshobeauty.html"> <span>Beauty & Health</span></a>
+            <a href="/meeshojwelary.html"> <span>Jewellery & Accessories</span></a>
+            <a href="/meeshobags.html"> <span>Bags & Footwear</span></a>
+            <a href="/meeshoelectronic.html"> <span>Electronics</span></a>
+
+
+
+        </div>
+
+        <div id="container">
+
+            <h2>Women Western Dresses </h2>
+            <P>Showing 41-60 out of 10000 products</P>
+
+            <div id="allproducts">
+
+                <div id="productfilterby">
+                    <div> Sort by : <b>Relevance</b>
+                    </div>
+
+                    <div>
+                        <p><b>FILTERS</b></p>
+                        <p>1000+ Products</p>
+
+                        <p>Category</p>
+
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="search">
+
+                        </div>
+
+                        <div>
+                            <input type="checkbox"> <label for="">Dresses</label><br>
+                            <input type="checkbox"> <label for="">Tops</label><br>
+                           
+                            <input type="checkbox"> <label for="">Blouses
+                               </label><br>
+                            <input type="checkbox"> <label for=""> Bluetooth Headphones</label><br>
+                            <input type="checkbox"> <label for="">Cups & Mugs</label><br>
+                            <input type="checkbox"> <label for=""> Car Covers</label><br>
+                            <input type="checkbox"> <label for="">Shirt</label><br>
+                            <input type="checkbox"> <label for="">Watches</label><br>
+                            <input type="checkbox"> <label for="">Gown</label><br>
+                            <input type="checkbox"> <label for="">Analog Watches</label><br>
+                            <input type="checkbox"> <label for="">Dresses</label><br>
+                            <input type="checkbox"> <label for="">Analog Watches</label><br>
+                            <input type="checkbox"> <label for="">Bangles & Bracelets</label><br>
+                            <input type="checkbox"> <label for="">Blouses
+                               </label><br>
+
+
+
+                        </div>
+
+                        <div>
+                            <p>Gender</p>
+                            <span>Boy</span>
+                            <span>Girl</span>
+                            <span>Men</span>
+                            <span>Women</span>
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                               
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Fabric</DIv></option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                                
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Color</DIv></option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                              
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Price</DIv></option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                              
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Meesho Mall</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                                <H2>WOMENS Dresses</H2>
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Occassion</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                               
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">combo of</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                               
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Discount</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                               
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Rating</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+                        <div>
+
+                            <select name="" class="SELECTION">
+                               
+                                <!-- <option value=""> <input type="checkbox"> <label for="">Dresses</label></option> -->
+                                <option value="">Print Or Pattern Type</option>
+                               
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+                <div id="product">
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/186168075/mwial_400.webp" alt=""></div>
+                       
+                        <p>Pretty Ravishing Women Dresses</p>
+                        <h5>₹365 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/70393359/7x5uz_400.webp" alt=""></div>
+                        <p>Aishani Petite Kurtis</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/296857970/uhxtt_400.webp" alt=""></div>
+                        <p>Fancy Retro Women Tops & Tunics </p>
+                        <h5>₹ 649 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/177775052/01ecc_400.webp" alt=""></div>
+                        <p>Women Tops & Tunics
+
+                          </p>
+                        <h5>  ₹375<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/211028369/z5oxr_400.webp" alt=""></div>
+                       
+                        <p>Kashvi Sensational Women Kurta</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/127154383/zy1ec_400.webp" alt=""></div>
+                        <p>Ravishing Fancy Women Dupattas</p>
+                        <h5>₹ 160<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/186168075/mwial_400.webp" alt=""></div>
+                       
+                        <p>Pretty Ravishing Women Dresses</p>
+                        <h5>₹365 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/70393359/7x5uz_400.webp" alt=""></div>
+                        <p>Aishani Petite Kurtis</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/296857970/uhxtt_400.webp" alt=""></div>
+                        <p>Fancy Retro Women Tops & Tunics </p>
+                        <h5>₹ 649 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/177775052/01ecc_400.webp" alt=""></div>
+                        <p>Women Tops & Tunics
+
+                          </p>
+                        <h5>  ₹375<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/211028369/z5oxr_400.webp" alt=""></div>
+                       
+                        <p>Kashvi Sensational Women Kurta</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/127154383/zy1ec_400.webp" alt=""></div>
+                        <p>Ravishing Fancy Women Dupattas</p>
+                        <h5>₹ 160<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/235937189/np2dw_400.webp" alt=""></div>
+                        <p>Stylish Latest Women Saree</p>
+                        <h5>₹ 749 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/92169328/6bubd_400.webp" alt=""></div>
+                        <p>Aagyeyi Fashionable Dresses</p>
+                        <h5>₹ 149 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/60856199/appvl_400.webp" alt=""></div>
+                       
+                        <p>Kashvi Voguish Kurtis</p>
+                        <h5>₹265 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/152327823/wvayt_400.webp" alt=""></div>
+                        <p>Aishani Petite Kurtis</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/157082566/vrrzn_400.webp" alt=""></div>
+                        <p>Georgette Lace border Saree </p>
+                        <h5>₹ 649 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/204043560/lenoh_400.webp" alt=""></div>
+                        <p>Trendy Ensemble Kurtis
+
+                          </p>
+                        <h5>  ₹375<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/60311011/ug8la_400.webp" alt=""></div>
+                       
+                        <p>Kashvi Sensational Women Kurta</p>
+                        <h5>₹ 249 <span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+                    <div>
+                        <div> <img src="https://images.meesho.com/images/products/149177191/l0lhl_400.webp" alt=""></div>
+                        <p>Ravishing Fancy Women Dupattas</p>
+                        <h5>₹ 160<span>onwards</span></h5>
+
+                        <div><span>Free Delivary</span></div>
+                        <span>3.3 &#9733</span><span>961 review</span>
+                    </div>
+
+                   
+
+                   
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div>
+            <div id="footer">
+                <div>
+                    <h2>Shop Non-Stop on Meesho</h2>
+
+                    <p>Trusted by more than 1 Crore Indians <br>
+                        Cash on Delivery | Free Delivery</p>
+
+                    <div style="display: flex;">
+                        <img src="https://images.meesho.com/images/pow/playstore-icon-big_400.webp" width="100%"
+                            height="100%" alt="">
+                        <img src="https://images.meesho.com/images/pow/appstore-icon-big_400.webp" width="100%"
+                            height="100%" alt="">
+
+                    </div>
+
+
+
+                </div>
+                <div>
+                    <span>Careers</span><br>
+                    <span>Become a supplier</span><br>
+                    <span>Hall of Fame</span>
+
+
+                </div>
+                <div>
+                    <span>Legal and Policies</span><br>
+                    <span>Meesho Tech Blog</span><br>
+                    <span>Notices and Returns</span>
+                </div>
+                <div>
+                    <h4>Reach out to us</h4>
+                    <div style="display: flex;">
+                        <img src="https://images.meesho.com/images/pow/facebook.png" alt="">
+                        <img src="https://images.meesho.com/images/pow/instagram.png" alt="">
+                        <img src="https://images.meesho.com/images/pow/youtube.png" alt="">
+                        <img src="https://images.meesho.com/images/pow/linkedin.png" alt="">
+                        <img src="https://images.meesho.com/images/pow/twitter.png" alt="">
+                    </div>
+
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>Fashnear Technologies Private Limited,<br>
+                        CIN: U74900KA2015PTC082263 <br>
+                        06-105-B, 06-102, (138 Wu) <br> Vaishnavi Signature, No. 78/9,<br> Outer Ring Road,
+                        Bellandur, <br> Varthur Hobli, Bengaluru-560103,<br> Karnataka, India <br>
+                        E-mail address: <br> query@meesho.com <br>
+                        © 2015-2023 Meesho.com</p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div id="moreabtmeesho">
+
+
+
+                <h2>More About Meesho</h2>
+
+                <h3>Meesho: Affordable Online Shopping at Your Fingertips</h3>
+                <p>There are many benefits of shopping online. You can take your time and look at different options
+                    to find exactly what you want. It's easy to compare prices online and find exactly what you are
+                    looking for. And now with Meesho, you can shop for anything you want at the lowest prices in the
+                    market. Even if you want to shop for cool gifts for your friends and family, there are many
+                    options that you can find on the Internet.</p>
+
+                <h3>A Huge Selection of Products Across All Categories</h3>
+                <p>We have a vast inventory of products ranging from apparel to cosmetics to home utility and
+                    kitchen products and more. With over 50 lakh products and 650+ product categories, Meesho is
+                    sure to have everything you need. In our latest collections, you will find all the popular items
+                    at an affordable price, so you can be confident you're getting the best deal. Whether you're in
+                    the market for new clothes, accessories, or just some daily-use items for home, Meesho has what
+                    you need.</p>
+
+                <h3>Women’s Ethnic Wear Collection</h3>
+                <p>When it comes to women's ethnic wear, we have everything you need to find the perfect outfit for
+                    any occasion. Whether you're looking for traditional sarees and blouses, or something more
+                    modern like suits or casual Kurtis, we have it all. And with our stunning collection of
+                    accessories, footwear, and jewellery sets, it's easy to put together a complete look that will
+                    turn heads at your next wedding or festive celebration. So come and shop with us today!</p>
+
+                <h3>Western Wear for Women</h3>
+                <p>Meesho is the best place to find fashionable and affordable western wear for women. With a
+                    constantly updating inventory of casual, formal, and partywear dresses, jeans, tops, T-shirts,
+                    skirts, and more, Meesho has all the latest trending outfits you're looking for--plus funky
+                    jewelry and accessories. You'll never have to worry about overspending or not being able to find
+                    something you love!</p>
+
+                <h3>Online Shopping</h3>
+                <p style="color: #570c45;">
+                    Curtains & Sheers | Round Cushions | Sofa Covers | Cotton Bedsheets | Bedding Sets | Pillow
+                    Covers | Decorative Items | Duvet Covers | Blankets | Home Temple | Yoga mats | Bean Bags |
+                    Single Bed Sheet | Cushions | Face Towels | Cotton Towel | Trays | Coasters</p>
+
+
+                <h3>Online Shopping</h3>
+                <p style="color: #570c45;">
+                    Curtains & Sheers | Round Cushions | Sofa Covers | Cotton Bedsheets | Bedding Sets | Pillow
+                    Covers | Decorative Items | Duvet Covers | Blankets | Home Temple | Yoga mats | Bean Bags |
+                    Single Bed Sheet | Cushions | Face Towels | Cotton Towel | Trays | Coasters</p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
