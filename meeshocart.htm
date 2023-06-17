@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            font-family: "apple-system", "Helvetica Neue", sans-serif, "Mier Book";
+            height: 500px; 
+         /* border: 1px solid blue; */
+        }
+
+        #productnav{
+            width: 100%;
+            height: 15%;
+            border-bottom: 1px solid #e9e9fe;
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #productnav>div:nth-child(1){
+            width: 15%;
+          
+        }
+
+        #productnav>div:nth-child(1)>a>img{
+            width: 100%;
+           padding: 15px;
+           
+        }
+
+        #productnav>div:nth-child(2){
+            width: 30%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #productnav>div:nth-child(2)>div{
+            width: 25px;
+             height: 25px;
+             padding-top: 5px;
+             border-radius: 50%;
+               border: 1px solid #eaeaf2;
+               text-align: center;  
+               color: grey;
+        }
+
+        #productnav>div:nth-child(2)>div>p{
+            font-size: small;
+            padding-right: 20px;
+           color: #47544e;
+        }
+
+        #productnav>div:nth-child(2)>span{
+            width: 20%;
+           border: 0.5px solid #eaeaf2;
+        }
+
+        #cart{
+            width: 60%;
+            height: 500px;
+            /* border: 1px solid rgb(0, 255, 98); */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cart>div:nth-child(1){
+            width: 55%;
+            /* border: 1px solid red; */
+        }
+        #cart>div:nth-child(1)>span{
+            width: 10%;
+           
+            font-size: larger;
+            /* border: 1px solid grey; */
+            padding: 4px 20px;
+           
+        }
+
+        #cart>div:nth-child(1)>div:nth-child(3){
+            width: 100%;
+            /* height: 100px; */
+            border: 1px solid #eaeaf2;
+            /* margin-top: 40px; */
+            padding: 10px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            display: flex;
+            margin-top: 30px;
+        }
+        #cart>div:nth-child(1)>div>img{
+            height: 80px;
+            width: 15%;
+            border-radius: 5px;
+
+        }
+        #cart>div:nth-child(1)>div>div{
+            margin-left: 20px;
+            line-height: 25px;
+        }
+
+        
+
+        #cart>div:nth-child(1)>div:nth-child(3)>div>p:nth-child(1){
+          font-weight: 550;
+            letter-spacing: 1px;
+        }
+
+        #cart>div:nth-child(1)>div:nth-child(3)>div>button:nth-child(4){
+            border: none;
+            font-size: medium;
+            background-color: transparent;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            margin-left: 10px;
+            margin-top: 10px;
+            
+        }
+
+        #cart>div:nth-child(1)>div:nth-child(4){
+            width: 100%;
+            border: 1px solid #eaeaf2;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+            height: 40px;
+            align-items: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        
+
+        #cart>div:nth-child(2){
+            width: 42%;
+            /* border: 5px solid red; */
+            padding: 15px;
+        }
+
+        #cart>div:nth-child(2)>div{
+           justify-content: space-between;
+            /* border: 2px solid red; */
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+
+        #cart>div:nth-child(2)>p{
+            font-size: small;
+            text-align: center;
+            background-color: #f8f8ff;
+            padding: 10px;
+        }
+        #cart>div:nth-child(2)>button{
+            width: 100%;
+            padding: 10px;
+            font-size: larger;
+            background-color: #9f2089;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #cart>div:nth-child(2)>img{
+            width: 100%;
+        }
+
+       
+
+
+      
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="productnav">
+            <div>
+                <a href="/meesho.html"> <img
+                    src="https://uploads-ssl.webflow.com/62bc395da3c33ed00dcc1317/634bd1950007a1468123fe05_logo%20meesho%20-p-500.png"></a>
+
+            </div>
+            <div>
+                <div>1  <p>cart</p></div>
+                
+               
+                <span></span>
+    
+                <div>2  <p>Address</p></div>
+              
+               
+                <span></span>
+    
+                <div>3 <p>Payment</p></div>
+               
+                
+                <span></span>
+    
+                <div>4 <p>Summary</p></div>
+              
+
+
+            </div>
+
+        
+
+        </div>
+
+        <div id="cart">
+            <div>
+                <span style="border-right: 1px solid grey;"> <strong>Cart</strong></span>
+                <span style="color: #7f7f88;">1 Item</span>
+
+                <div>
+
+                    
+                    <img src="https://images.meesho.com/images/products/70393359/7x5uz_512.jpg" alt="">
+                    <div >
+                        <p>AJ19ES49A</p>
+                        <span>Size: S  Qty: 1</span>
+
+                            <p>₹261</p>
+
+                            <BUtton><i class="fa-solid fa-xmark"></i> REMOVE</BUtton>
+
+
+                    </div>
+
+                   
+
+                </div>
+
+
+                <div>
+                    <div>Sold By : AJAY CRE#</div>
+                    <div>Free Delivery</div>
+
+
+
+                </div>
+          
+
+
+
+
+            </div>
+            <div>
+                <h5>
+                    Price Details</h5>
+
+                <div style="border-bottom: 1px solid #c8c8ec;">
+                  <div>Total Product Price
+  
+                   
+                  </div>
+                  <div> ₹261</div>
+
+
+
+                </div>
+                <div>
+
+                    <div> Order Total</div>
+                    <div>₹261</div>
+                </div>
+
+                <p>Clicking on ‘Continue’ will not deduct any money</p>
+
+                <button>Continue</button>
+
+                <img src="https://images.meesho.com/images/marketing/1588578650850.png" alt="">
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
