@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> my wishlist</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+    width: 100%;
+    height: 60px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cecede;
+    position: fixed;
+    top: 0%;
+    background-color: white;
+
+}
+
+#navbar>div:nth-child(1) {
+    width: 45%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 30%;
+    /* border: 1px solid blue; */
+
+}
+
+#logo>a>img {
+    width: 100%;
+    height: 100%;
+
+    padding: 12px;
+}
+
+#search {
+    width: 65%;
+    /* border: 1px solid blue; */
+
+}
+
+#search>div {
+    border: 1px solid #cecede;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    color: #8b8ba3;
+
+}
+
+#search>div>input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+
+
+#navbar>div:nth-child(2) {
+    width: 45%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    /* margin-left: 10px; */
+    margin: 10px;
+    color: #353543;
+
+
+}
+
+#navbar>div:nth-child(2)>div {
+    width: 30%;
+    /* border: 1px solid blue; */
+
+    /* font-size: larger; */
+    padding: 6px;
+    margin-right: 10px;
+
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(1) {
+    border-right: 2px solid #cecede;
+}
+
+#navbar>div:nth-child(2)>div:nth-child(2) {
+    border-right: 2px solid #cecede;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(3){
+    display: flex;
+    /* font-size: large; */
+}
+
+#navbar>div:nth-child(2)>div:nth-child(3)>a {
+
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(3)>a>div>i{
+    /* border: 1px solid blue; */
+    /* padding-right: 10px; */
+    /* text-align: center; */
+    margin: auto;
+    padding-left: 30px;
+}
+
+#navbar>div:nth-child(2)>div:nth-child(3)>a>div>span {
+    /* border: 1px solid blue; */
+    font-weight: 100;
+    padding-left: 23px;
+
+    /* margin-right: 100px; */
+
+    display: grid;
+    /* margin-right: 20px; */
+
+}
+
+
+#categories {
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid blue; */
+    /* text-align: center; */
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #cecede;
+    /* position: relative;
+
+   */
+    position: fixed;
+    top: 60px;
+    background-color: white;
+
+
+}
+
+#categories>a {
+    text-decoration: none;
+    color: black;
+}
+
+#categories>a>span {
+    padding: 22px;
+    color: #353543;
+    /* font-size: larger; */
+    /* font-weight: 100px; */
+
+
+}
+
+#categories>a>span:hover {
+    color: #c11f9b;
+    font-weight: 300px;
+}
+        #screen{
+            width: 100%;
+            /* height: 500px; */
+            /* border: 1px solid red; */
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #screen>div:nth-child(3){
+             width: 100%;
+           
+            /* border: 1px solid red; */
+            margin-top: 100px;
+
+        }
+
+    
+
+            .anostyle{
+             text-decoration: none!important;
+                color: #282c3f
+             }
+
+
+#screen>div:nth-child(3)>p{
+            margin-left: 65px;
+            font-weight: 640;
+            font-size: large;
+            padding-top: 70px;
+            
+
+        }
+
+        #wishlistproduct{
+            width: 90%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+           
+
+        }
+        #wishlistproduct>div{
+            width: 17%;
+           
+            height: 350px;
+            border:  1px solid #e4e4e7;
+            line-height: 25px;
+            margin-top: 30PX;
+            /* margin-left: 30px; */
+            font-size: small;
+           border-radius: 10px;
+        }
+        #wishlistproduct>div>img:nth-child(1){
+            display: block;
+            margin-left: auto;
+             margin-right: auto;
+             height: 250px;
+              width: 80%;
+        }
+
+        #wishlistproduct>div>p:nth-child(2){
+            color: #8b8ba3;
+            font-size: small;
+            text-align: center;
+
+
+        }
+
+        #wishlistproduct>div>span:nth-child(3){
+            color: #282C3F;
+            font-size: large;
+            font-weight: bold;
+           margin-left: 15px;
+        }
+
+        #wishlistproduct>div>span:nth-child(4){
+            color: #282C3F;
+            font-size: small;
+            color: grey;
+        }
+
+        #wishlistproduct>div>span:nth-child(5){
+            color: #282C3F;
+            font-weight: bold;
+            
+            color:#23bb75;
+            margin-bottom: 10px;
+        }
+
+        #wishlistproduct>div>button:nth-child(6){
+            /* border: 1px solid grey; */
+            text-align: center;
+            padding: 12px;
+            margin-top: 8px;
+            font-weight: bold;
+            color: white;
+            background-color: #c11f9b;
+            border-radius: 5PX;
+            font-size: small;
+           width: 100%;
+           border: none;
+
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <div id="logo">
+                    <a href="/meesho.html"> <img
+                            src="https://uploads-ssl.webflow.com/62bc395da3c33ed00dcc1317/634bd1950007a1468123fe05_logo%20meesho%20-p-500.png"></a>
+
+                </div>
+                <div id="search">
+                    <div> <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <input type="text" placeholder="Try Saree, Kurti or Search by Product Code
+                        ">
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+
+                <div><i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Download App</span>
+                </div>
+                <div>
+                    <span>Become a Supplier </span>
+                </div>
+
+                <div>
+                    <a class="anostyle" href="/meeshosignup.html">
+                        <div><i class="fa-regular fa-user"></i>
+                            <span> Profile </span>
+                        </div>
+                    </a>
+                   
+                     <a class="anostyle" href="/meeshocart.htm">
+                        <div><i class="fa-solid fa-cart-shopping"></i>
+                            <!-- <p>Cart</p> -->
+                            <span>Cart</span>
+                        </div>
+                     </a>
+                   
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div id="categories">
+            <a href="/meesowomesethic.html"> <span>Women Ethnic</span></a>
+            <a href="/meeshowomenswestern.html"> <span>Women Western</span></a>
+            <a href="/meeshomens.html"> <span>Men</span></a>
+            <a href="/meeshokids.html"> <span>Kids</span></a>
+            <a href="/meeshohomeskit.html"> <span>Home & Kitchen</span></a>
+            <a href="/meeshobeauty.html"> <span>Beauty & Health</span></a>
+            <a href="/meeshojwelary.html"> <span>Jewellery & Accessories</span></a>
+            <a href="/meeshobags.html"> <span>Bags & Footwear</span></a>
+            <a href="/meeshoelectronic.html"> <span>Electronics</span></a>
+
+        </div>
+
+        <div>
+            <p>My Wishlist </p>
+
+            <div id="wishlistproduct">
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15098392/2021/8/24/34df092c-5af7-4670-8727-bf6fddd8586c1629800349690-KASSUALLY-Women-Dresses-3121629800349085-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/17206804/2022/2/28/90a62704-07c8-4aa0-a413-8e157b9f1fa31646045263924-UF-Women-Dresses-3851646045263269-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/16449870/2022/1/19/8aca4798-e568-4378-ad32-8d1dd3af435a1642588921939-Berrylush-Women-Attractive-Red-Floral-Puff-Sleeves-Dress-826-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+
+                </div>
+
+              
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15098392/2021/8/24/34df092c-5af7-4670-8727-bf6fddd8586c1629800349690-KASSUALLY-Women-Dresses-3121629800349085-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+
+                </div>
+
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/17206804/2022/2/28/90a62704-07c8-4aa0-a413-8e157b9f1fa31646045263924-UF-Women-Dresses-3851646045263269-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>₹599</span>
+                    <span><s>₹399</s></span>
+                    <span>10% OFF</span>
+
+                    <button>MOVE TO BAG</button>
+
+                </div>
+
+               
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
